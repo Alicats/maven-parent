@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.xej</groupId>
+    <artifactId>maven-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>maven-common</module>
+        <module>maven-dao</module>
+        <module>maven-service</module>
+        <module>maven-web</module>
+    </modules>
+    <!-- 打包方式 -->
+    <packaging>pom</packaging>
+
+    <!-- 统一管理版本依赖 -->
+    <properties>
+        <springboot-version>2.2.2.RELEASE</springboot-version>
+        <myabits-springboot>2.1.2</myabits-springboot>
+        <mysql-connector-java>5.1.46</mysql-connector-java>
+        <lombok-version>1.18.12</lombok-version>
+        <druid-version>1.1.13</druid-version>
+        <fastjson-version>1.2.35</fastjson-version>
+    </properties>
+
+
+        <dependencies>
+            <!--springboot-stater-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${springboot-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>${springboot-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${myabits-springboot}</version>
+            </dependency>
+            <!--mysql-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java}</version>
+            </dependency>
+            <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+            <!--druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <!--<version>1.2.35</version>-->
+                <version>${fastjson-version}</version>
+                <!--<scope>compile</scope>-->
+            </dependency>
+
+        </dependencies>
+
+
+</project>
