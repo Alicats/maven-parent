@@ -20,7 +20,7 @@
     <properties>
         <springboot-version>2.2.2.RELEASE</springboot-version>
         <myabits-springboot>2.1.2</myabits-springboot>
-        <mysql-connector-java>5.1.46</mysql-connector-java>
+        <mysql-connector-java>8.0.28</mysql-connector-java>
         <lombok-version>1.18.12</lombok-version>
         <druid-version>1.1.13</druid-version>
         <fastjson-version>1.2.35</fastjson-version>
